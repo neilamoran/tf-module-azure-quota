@@ -1,0 +1,6 @@
+$subscription = Set-AzContext -SubscriptionId ${subscription_id}
+
+$auth = Get-AzAccessToken
+
+return ($auth | ConvertTo-Json)
+
